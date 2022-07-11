@@ -10,8 +10,6 @@ from rasa.shared.nlu.constants import ENTITIES, TEXT
 
 from underthesea import sentiment
 
-# TODO: Correctly register your component with its type
-
 
 @DefaultV1Recipe.register(
     [DefaultV1Recipe.ComponentType.ENTITY_EXTRACTOR], is_trainable=False

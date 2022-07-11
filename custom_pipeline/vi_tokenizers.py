@@ -1,4 +1,3 @@
-from email import message
 from typing import Any, Dict, List, Optional, Text
 from rasa.engine.graph import GraphComponent, ExecutionContext
 from rasa.engine.recipes.default_recipe import DefaultV1Recipe
@@ -6,14 +5,9 @@ from rasa.engine.storage.resource import Resource
 from rasa.engine.storage.storage import ModelStorage
 from rasa.shared.nlu.training_data.message import Message
 from rasa.shared.nlu.training_data.training_data import TrainingData
-from spellchecker import SpellChecker
 from rasa.nlu.tokenizers.tokenizer import Token, Tokenizer
 
 from underthesea import word_tokenize
-
-spell = SpellChecker()
-
-# TODO: Correctly register your component with its type
 
 
 @DefaultV1Recipe.register(
