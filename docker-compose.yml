@@ -8,9 +8,10 @@ services:
     volumes:
     - ./actions:/app/actions
     - ./data:/app/data
+    - ./custom_pipeline:/app/custom_pipeline
     command: bash -c "rm -rf models/* && rasa train && rasa run --enable-api --cors \"*\" --debug -p 5006"
     ports:
-    - '5006:5006'
+    - '5006:5005'
     public: true
     networks:
     - all
@@ -25,7 +26,7 @@ services:
     - ./custom_pipeline:/app/custom_pipeline
     command: ["rasa", "run", "actions"]
     ports:
-    - '5056:5056'
+    - '5056:5055'
     networks:
     - all
 
