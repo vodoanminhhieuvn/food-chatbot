@@ -12,7 +12,7 @@ services:
     - ./models:/app/models
     command: bash -c "rasa run -m models --enable-api --cors \"*\" --debug"
     ports:
-    - '5006:5005'
+    - '5005:5005'
     public: true
     networks:
     - all
@@ -28,7 +28,7 @@ services:
     - ./custom_pipeline:/app/custom_pipeline
     command: ["rasa", "run", "actions"]
     ports:
-    - '5056:5055'
+    - '5055:5055'
     networks:
     - all
 
