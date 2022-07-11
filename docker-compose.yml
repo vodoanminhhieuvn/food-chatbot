@@ -22,8 +22,8 @@ services:
     restart: always
     volumes:
     - ./actions:/app/actions
-    - ./utils:/app/utils
-    command: ["rasa", "run", "actions", "-p", "5056"]
+    - ./custom_pipeline:/app/custom_pipeline
+    command: ["rasa", "run", "actions"]
     ports:
     - '5056:5056'
     networks:
