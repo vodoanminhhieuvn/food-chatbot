@@ -1,4 +1,4 @@
-FROM python:3.8.9-stretch AS BASE
+FROM python:3.8.13-bullseye AS BASE
 
 RUN apt-get update \
   && apt-get --assume-yes --no-install-recommends install \
