@@ -11,7 +11,6 @@ RUN apt-get update \
 
 WORKDIR /app
 
-# upgrade pip version
 RUN pip3 install --no-cache-dir --upgrade pip
 
 COPY requirements.txt requirements.txt
