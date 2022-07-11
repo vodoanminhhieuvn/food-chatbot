@@ -1,0 +1,49 @@
+# The config recipe.
+# https://rasa.com/docs/rasa/model-configuration/
+recipe: default.v1
+
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: vn
+
+pipeline:
+  - name: custom_pipeline.vi_tokenizers.ViTokenizers
+  - name: custom_pipeline.vi_sentiment.ViSentiment
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+    OOV_token: _oov_
+    token_pattern: (?u)\b\w+\b
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: CountVectorsFeaturizer
+    analyzer: char
+    min_ngram: 3
+    max_ngram: 5
+  - name: RegexEntityExtractor
+    case_sensitive: False
+    use_lookup_tables: True
+    use_regexes: True
+  - name: DIETClassifier
+    entity_recognition: true
+    epochs: 400
+    ranking_length: 5
+  - name: EntitySynonymMapper
+  - name: FallbackClassifier
+    threshold: 0.7
+    ambiguity_threshold: 0.1
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: MemoizationPolicy
+  - name: RulePolicy
+  - name: UnexpecTEDIntentPolicy
+    max_history: 5
+    epochs: 100
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+    constrain_similarities: true

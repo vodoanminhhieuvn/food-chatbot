@@ -1,0 +1,59 @@
+version: '3.1'
+
+nlu:
+  - intent: ask_how_to_cook
+    examples: |
+      - chế biến gà chiên
+      - cách làm món cá kho
+      - mình muốn làm món gà kho
+      - mình muốn làm trứng chiên
+      - mình làm gỏi [gà](ingredient) đi
+      - mình muốn làm gà [chiên](cook_technique)
+      - chế biến gà chiên nước mắm
+      - chế biến gỏi [cá](ingredient)
+      - chế biến gà [luộc](cook_technique)
+      - làm trứng chiên
+      - gà chiên 
+      - [cánh gà](ingredient) chiên
+      - trứng chiên
+      - hàu
+      - nước mắm
+      - rim nước mắm
+      - rim sa tế
+      - rim
+      - trứng luộc
+      - mình muốn rim nước mắm
+      - mình muốn _oov_
+      - _oov_
+      - Cà tím sấy giòn
+      - mình muốn làm Bún Gạo Lứt Xào Chay
+      - mình muốn làm Đậu Hủ Kho Tương Hột
+      - mình muốn làm Nước Mắm Chay Từ Trái Thơm
+      - mình muốn làm Bánh Mì Đen
+      - mình muốn làm Sandwich Phô Mai
+      - làm Cà tím sấy giòn
+      - làm Rong biển cuộn rau củ
+      - làm Bún Gạo Lứt Xào Chay
+      - làm Salad Hy Lạp
+      - làm Ức gà sốt chanh leo
+      - làm Ức gà ướp mật ong áp chảo
+      - làm Gà Chiên Nước Mắm
+      - cho mình xem gà ác đi 
+      - cho tao xem ướp mật ong áp chảo
+      - cho mình coi cà tím
+      - coi gà ta
+      - xem trứng chiên nước
+      - gà hấp mâm đi
+      - gà hấp hưu đi
+      - gà hấp nhĩ đi
+      - gà rang muối sả nấu sao vậy
+      - trứng chiên hấp nấu sao
+      - gà ráng muối nấu sao
+      - Bún Gạo Lứt Xào Chay nấu sao
+      - Đậu Hủ Kho Tương Hột nấu sao
+      - Nước Mắm Chay Từ Trái Thơm nấu sao
+      - Bánh Mì Đen nấu sao
+      - Sandwich Phô Mai nấu sao
+      - cá hồi chần
+      - nước chấm cá luộc nấu sao
+      - cá chim chiên giòn mắm chua ngọt

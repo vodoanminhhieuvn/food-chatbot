@@ -1,0 +1,143 @@
+version: '3.1'
+intents:
+  - affirm
+  - ask_find_recipe
+  - ask_for_create_meal_plan
+  - ask_for_nutrient
+  - ask_how_to_cook
+  - ask_ingredient_details
+  - ask_what_ingredients
+  - ask_what_is_cook_technique
+  - bot_challenge
+  - deny
+  - goodbye
+  - greet
+  - mood_great
+  - mood_unhappy
+  - provide_cook_technique
+  - set_ingredients
+  - ask_to_clear_search
+  - re_set_ingredients
+actions:
+  - action_create_meal_plan
+  - action_default_fallback
+  - action_explain_specific_technique
+  - action_find_recipe
+  - action_how_to_cook
+  - action_ingredient_details
+  - action_previous_recipe
+  - action_recipe_detail
+  - action_set_cook_technique
+  - action_set_diet
+  - action_set_ingredients
+  - action_set_nutrient
+  - action_what_ingredients
+  - action_what_is_cook_technique
+  - action_greet
+  - action_clear_config
+  - action_re_set_ingredients
+entities:
+  - sentiment
+  - cook_technique
+  - ingredient
+  - nutrient
+  - min_number
+  - max_number
+  - target_time
+  - target_calories
+  - detail_index
+  - cuisine
+  - diet
+slots:
+  asking_recipe:
+    type: bool
+    mappings:
+      - type: custom
+  diet:
+    type: any
+    mappings:
+      - type: custom
+  previous_search:
+    type: any
+    mappings:
+      - type: custom
+  meal_plan_response:
+    type: any
+    mappings:
+      - type: custom
+  recipe_search_response:
+    type: any
+    mappings:
+      - type: custom
+  ingredient_search:
+    type: any
+    mappings:
+      - type: custom
+  ingredient_list:
+    type: list
+    mappings:
+      - type: custom
+  cuisine:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: cuisine
+  cook_technique:
+    type: text
+    mappings:
+      - type: custom
+  food_search_query:
+    type: text
+    mappings:
+      - type: custom
+  min_calories:
+    type: float
+    initial_value: 200
+    min_value: 0.0
+    max_value: 5000.0
+    mappings:
+      - type: custom
+  max_calories:
+    type: float
+    initial_value: 600
+    min_value: 0.0
+    max_value: 5000.0
+    mappings:
+      - type: custom
+  min_fat:
+    type: float
+    initial_value: 50
+    min_value: 0.0
+    max_value: 5000.0
+    mappings:
+      - type: custom
+  max_fat:
+    type: float
+    initial_value: 120
+    min_value: 0.0
+    max_value: 5000.0
+    mappings:
+      - type: custom
+forms:
+  feedback_form:
+    required_slots:
+      - feedback
+responses:
+  utter_greet:
+    - text: Hey! How are you?
+  utter_cheer_up:
+    - text: 'Here is something to cheer you up:'
+      image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+    - text: Did that help you?
+  utter_happy:
+    - text: Nói với mình yêu cầu khác nếu bạn chưa tìm được món nhá
+  utter_ask_feedback:
+    - text: Tin nhắn tiếp theo của bạn là lời đóng góp ý kiến của ban nha :)
+  utter_goodbye:
+    - text: Bye
+  utter_iamabot:
+    - text: I am a bot, powered by Rasa.
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true

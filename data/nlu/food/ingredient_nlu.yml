@@ -1,0 +1,46 @@
+version: '3.1'
+
+nlu:
+  - intent: set_ingredients
+    examples: |
+      - mình muốn ăn gà
+      - mình có gà
+      - mình đang có gà
+      - mình muốn nấu món canh chua cá lóc
+      - công thức gà [chiên](cook_technique)
+      - thành phần vịt
+      - nguyên liệu cá
+      - nguyên liệu [gà](ingredient)
+      - các món [trứng](ingredient) chiên
+      - cách nấu trứng chiên
+      - chế biến gà
+      - nấu trứng
+      - nấu cá
+      - có món gì ngon với gà không
+      - có món gì với trứng không
+      - làm gà chiên có món nào không
+      - làm cá thôi
+      - tìm cho mình món gà đi
+      - tìm cho mình món cá đi
+      - mình muốn ăn gà
+      - mình muốn ăn trứng
+      - muốn ăn cá
+      - mình thèm gà
+      - mình thèm cá
+
+  - intent: re_set_ingredients
+    examples: |
+      - chỉ [cá](ingredient) thôi
+      - mình [gà](ingredient) thôi
+      - trứng không cần cách nấu đâu
+      - thôi gà thôi
+      - không cần cách nấu chỉ gà thôi
+      - không cần cách nấu chỉ trứng thôi
+
+  - intent: ask_what_ingredients
+    examples: |
+      - thành phần nguyên liệu là gì
+      - cách thêm nguyên liệu
+      - làm sao thêm đồ ăn
+      - thêm nguyên liệu ?
+      - làm sao cung cấp nguyên liệu nhỉ ?

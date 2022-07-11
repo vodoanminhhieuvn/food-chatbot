@@ -1,0 +1,11 @@
+version: '3.1'
+
+nlu:
+  - intent: request_feedback
+    examples: |
+      - mình muốn đóng góp ý kiến
+      - làm sao để đóng góp ý kiến ?
+      - đóng góp ý kiến
+      - mình muốn share feedback
+      - gửi ý kiến
+      - phàn nàn

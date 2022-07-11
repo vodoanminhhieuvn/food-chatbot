@@ -1,0 +1,10 @@
+version: '3.1'
+
+nlu:
+  - intent: ask_for_cuisine
+    examples: |
+      - nấu món [hàn](cuisine)
+      - nấu món ấn
+      - món trung
+      - món việt
+      - món nga

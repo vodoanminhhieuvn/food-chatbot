@@ -1,0 +1,40 @@
+version: '3.1'
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  # - rule: defination
+  #   steps:
+  #     - intent: ask_for_defination
+  #     - action: action_defination
+
+  # - rule: Activate feedback form
+  #   steps:
+  #     - intent: request_feedback
+  #     - action: feedback_form
+  #     - active_loop: feedback_form
+
+  # - rule: Submit feedback form
+  #   condition:
+  #     - active_loop: feedback_form
+  #   steps:
+  #     - action: feedback_form
+  #     - active_loop: null
+  #     - slot_was_set:
+  #         - requested_slot: null
+  #     - action: action_submit_feedback
+  #     - slot_was_set:
+  #         - feedback: null
+
+  - rule: fallback
+    steps:
+      - intent: nlu_fallback
+      - action: action_default_fallback

@@ -1,0 +1,16 @@
+version: '3.1'
+
+nlu:
+  - lookup: diet
+    examples: |
+      - giảm cân
+      - cho phái mạnh
+      - ăn chay
+      - phự nữ sau khi sinh
+      - trẻ dưới 1 tuổi
+      - cho sức khoẻ
+      - cho trẻ em
+      - cho tim mạch
+      - cho phái nữ
+      - tăng cân
+      - ăn kiêng

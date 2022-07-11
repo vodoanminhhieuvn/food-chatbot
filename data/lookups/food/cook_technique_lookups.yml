@@ -1,0 +1,216 @@
+version: '3.1'
+
+nlu:
+  - lookup: cook_technique
+    examples: |
+      - Luộc
+      - hấp
+      - chiên
+      - Xốt
+      - rang
+      - Hầm
+      - kho
+      - Om
+      - ram
+      - quay
+      - ngâm
+      - ú 
+      - muối
+      - ép
+      - vắt
+      - xay
+      - trộn
+      - cuốn
+      - Axit hóa
+      - Al dente
+      - Amandine
+      - Quá trình amyl hóa
+      - Chống vỉ nướng
+      - Aspic
+      - Au gratin
+      - Au jus
+      - Au poivre
+      - Nấu ăn trong rừng
+      - Baghaar
+      - Bain-marie
+      - nướng
+      - ép
+      - hầm
+      - Nướng bánh
+      - Nướng thịt
+      - Barding
+      - Phết
+      - Chần
+      - Pha trộn
+      - Nướng mù
+      - Sôi
+      - Dũng cảm
+      - Bricolage
+      - Nước muối
+      - Làm sáng
+      - Nướng
+      - Màu nâu
+      - Làm kẹo
+      - Đóng hộp
+      - Caramen hóa
+      - Nấu ăn mang đi
+      - Thịt hầm
+      - Gỏi
+      - Máy gia tốc
+      - Làm pho mát
+      - Chiffonade
+      - Kỹ thuật nấu ăn Trung Quốc
+      - Nấu nồi đất
+      - Học mã
+      - Kết cấu
+      - Conche
+      - Tâm sự
+      - Consomme
+      - Nấu rượu
+      - Kem
+      - Đánh kem
+      - Croquette
+      - Tam giác ẩm thực
+      - Uốn sữa
+      - Cá chữa bệnh
+      - Chữa bệnh
+      - Cắt
+      - Chiên ngập dầu
+      - Khử mỡ
+      - Tẩy dầu mỡ
+      - Thái hạt lựu
+      - Hấp đôi
+      - Bột nhào
+      - Nạo vét
+      - Rang khô
+      - Sấy khô
+      - Dum pukht
+      - Nấu nướng bằng lò nướng kiểu Hà Lan
+      - Lò đất
+      - Rửa trứng
+      - Nhũ hóa
+      - En papillote
+      - En Vessie
+      - Sự gắn kết
+      - Nấu động cơ
+      - Báo cáo
+      - Lên men
+      - Phi lê
+      - Flambe
+      - Bếp nướng phẳng
+      - Bọt
+      - Fondue
+      - Bảo quản thực phẩm
+      - Tủ hấp thực phẩm
+      - Fricassee
+      - Bảo quản trái cây
+      - Xào
+      - Rán nhẹ
+      - Dán kính
+      - Gratin
+      - Lưới
+      - Nướng
+      - Nấu nướng trên cao
+      - Rán muối nóng
+      - Huff paste
+      - Nướng gián tiếp
+      - Truyền dịch
+      - Jugging
+      - Nước ép
+      - Julienne
+      - Julienning
+      - Kalua
+      - Karaage
+      - Kho
+      - Kinpira
+      - Nhào trộn
+      - Bôi mỡ
+      - Rửa trôi
+      - Nấu ăn ở nhiệt độ thấp
+      - Maceration
+      - Ướp
+      - Ướp
+      - Lò vi sóng
+      - Phay
+      - Băm
+      - Băm
+      - Trộn
+      - Thịt nướng kiểu Mông Cổ
+      - Nước chấm mẹ
+      - Nappage
+      - Nixtamal hóa
+      - Nấu ăn mỗi tháng một lần
+      - Nấu ăn ngoài trời
+      - Chảo chiên thức ăn
+      - Parbaking
+      - Hồ sơ
+      - Dán
+      - Bóc
+      - Lớp tế bào
+      - Tẩy chua
+      - Heo quay
+      - săn trộm
+      - Lên men trước
+      - Nấu áp suất
+      - Áp suất chiên
+      - Hiệu đính
+      - Purée
+      - Hoàn nguyên
+      - Nấu màu đỏ
+      - Sự giảm bớt
+      - Kết xuất
+      - Giàu có
+      - Rillettes
+      - Rang
+      - Robatayaki
+      - Rotisserie
+      - Roux
+      - Saikyoyaki
+      - Ướp muối
+      - Xào
+      - Đau nhức
+      - Đồ gia vị
+      - Tách trứng
+      - Rán
+      - Cạo
+      - Thu nhỏ
+      - Shuck
+      - Phập
+      - Nồi nấu chậm
+      - Nấu chậm bằng lò
+      - Hút thuốc
+      - Ngạt
+      - Có tinh thần
+      - Sous vide
+      - Đá cầu
+      - Spherification
+      - Nảy mầm
+      - Hấp
+      - Dốc
+      - Chèo
+      - Xào
+      - Bột nhào thẳng
+      - Hỗn hợp
+      - Xào đường
+      - Sugaring
+      - Tối cao
+      - Đổ mồ hôi
+      - Swissing
+      - Ống tiêm
+      - Tandoor
+      - Tataki
+      - Ủ
+      - Tenderizing
+      - Teriyaki
+      - Nấu ăn bằng nhiệt
+      - Bộ tuần hoàn ngâm nhiệt
+      - Nhiệt hóa
+      - Làm dày
+      - Transglutaminase
+      - Giàn
+      - Nồi chiên gà tây
+      - Nấu trong bình chân không
+      - Mềm mại
+      - Kỹ thuật nấu ăn Việt Nam
+      - Nấu nướng
+      - Sự hăng hái

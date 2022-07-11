@@ -1,0 +1,35 @@
+version: '3.1'
+
+nlu:
+  - intent: ask_what_is_cook_technique
+    examples: |
+      - có bao nhiêu cách nấu
+      - kỹ thuật nấu ăn là gì
+      - giải thích kỹ thuật nấu ăn
+      - kỹ thuật nấu ăn ?
+      - làm sao để chế biến nguyên liệu ?
+      - làm sao để chế biến gà ?
+      - bao nhiêu cách để nấu ăn
+      - hướng dẫn cách nấu ăn
+      - có những cách nấu ăn nào nhỉ
+      - có cách nấu nào khác không
+      - có những cách nấu món này nhỉ
+      - những cách nấu ăn phổ biến
+
+  - intent: provide_cook_technique
+    examples: |
+      - nấu kiểu [trứng](ingredient) [chiên](cook_technique)
+      - mình muốn luộc
+      - minh muốn chiên
+      - chiên đi
+      - cách nấu chiên
+      - nấu kiểu luộc
+      - nấu kiểu hấp
+      - hấp đi
+      - món luộc á
+      - món hấp á
+      - món chiến á
+      - có món chiên không
+      - có món hấp không
+      - mình muốn luộc
+      - mình muốn hấp

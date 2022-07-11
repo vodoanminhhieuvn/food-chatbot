@@ -1,0 +1,8 @@
+version: '3.1'
+
+nlu:
+  - intent: ask_ingredient_details
+    examples: |
+      - nguyên liệu số [0](detail_index)
+      - thông tin nguyên liệu [2](detail_index)
+      - thông tin thành phần [3](detail_index)

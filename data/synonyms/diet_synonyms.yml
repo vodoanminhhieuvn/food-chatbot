@@ -1,0 +1,74 @@
+version: '3.1'
+
+nlu:
+  - synonym: alcohol-cocktail
+    examples: |
+      - Alcohol Cocktail
+      - cocktail
+
+  - synonym: alcohol-free
+    examples: |
+      - alcohol free
+
+  - synonym: celery-free
+    examples: |
+      - celery free
+
+  - synonym: crustacean-free
+    examples: |
+      - crustacean free
+
+  - synonym: dairy-free
+    examples: |
+      - dairy free
+
+  - synonym: DASH
+    examples: |
+      - dash
+
+  - synonym: egg-free
+    examples: |
+      - egg free
+
+  - synonym: fish-free
+    examples: |
+      - fish free
+
+  - synonym: fodmap-free
+    examples: |
+      - fodmap free
+
+  - synonym: gluten free
+    examples: |
+      - gluten free
+      - gluten-free
+
+  - synonym: immuno-supportive
+    examples: |
+      - immuno supportive
+
+  - synonym: vegan
+    examples: |
+      - vegan
+
+  - synonym: Vegetarian
+    examples: |
+      - Vegetarian
+
+  - synonym: Giảm cân
+    examples: |
+      - giảm cân
+
+  - synonym: Cho phái mạnh
+    examples: |
+      - phái mạnh
+      - cho phái mạnh
+
+  - synonym: Ăn chay
+    examples: |
+      - ăn chay
+      - chay
+
+  - synonym: Tăng cân
+    examples: |
+      - tăng cân

@@ -1,0 +1,18 @@
+version: '3.1'
+
+nlu:
+  - lookup: cuisine
+    examples: |
+      - Việt
+      - thái
+      - hàn
+      - nhật
+      - âu
+      - hoa
+      - ấn
+      - Sing
+      - Latin
+      - Indonesia
+      - Nga
+      - Malaysia
+      - Philippines

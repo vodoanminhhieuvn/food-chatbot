@@ -1,0 +1,97 @@
+version: '3.1'
+
+nlu:
+  - intent: greet
+    examples: |
+      - xin chào
+      - chào nè
+      - chào buổi sáng
+      - chào buổi tối
+      - ây bạn ơi
+      - bạn ei
+      - bắt đầu
+      - chào bot
+      - chào
+      - vẫy tay
+      - chèo bạn
+      - buổi chiều tốt lành
+      - chào mình muốn nấu [trứng](ingredient) [chiên](cook_technique)
+      - chào đồ ăn cho người [ăn chay](diet)
+      - xin chào bạn có thể làm được gì
+      - xin chao minh muốn nấu cá 
+      - xin chao
+      - xin chào mình muốn nấu trứng
+
+  - intent: goodbye
+    examples: |
+      - tạm biệt bot
+      - hẹn gặp lại
+      - bai
+      - bái bai
+      - một ngày tốt lành
+      - chúc ngủ ngon
+      - gặp lại sau
+      - tạm biệt
+      - có gì gặp lại
+
+  - intent: affirm
+    examples: |
+      - đồng ý
+      - chấp nhận
+      - ừ
+      - ừa
+      - làm đi
+      - triển đi bạn ei
+      - thông qua
+
+  - intent: deny
+    examples: |
+      - không
+      - không chấp nhận
+      - không đông tình
+      - không thông qua
+      - đéo
+      - đéo nhá
+      - đừng
+      - dừng lại
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?

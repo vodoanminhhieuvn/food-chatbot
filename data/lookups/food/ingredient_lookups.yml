@@ -1,0 +1,1559 @@
+version: '3.1'
+
+nlu:
+  - lookup: ingredient
+    examples: |
+      - canh
+      - cánh gà
+      - nước mắm
+      - sashimi
+      - Muối
+      - Đường
+      - Nước uống
+      - Dầu 
+      - mỡ
+      - Hương liệu
+      - Sản phẩm bơ sữa
+      - Dầu và mỡ thực vật
+      - Ngũ cốc
+      - Rau quả
+      - Trái cây
+      - Bột
+      - Lúa mì
+      - mì
+      - rau củ
+      - rau
+      - Dầu thực vật
+      - Glucose
+      - Tinh bột
+      - Bột ngũ cốc
+      - Sữa
+      - Hương liệu tự nhiên
+      - Gia vị
+      - Chất nhũ hóa
+      - Bột mì
+      - E330
+      - Thảo mộc
+      - Dầu hướng dương
+      - Hạt giống
+      - Màu sắc
+      - Chất bảo quản
+      - Ca cao
+      - Axit
+      - E322
+      - Thực vật
+      - Củ hành
+      - cá lóc
+      - Chất chống oxy hóa
+      - Trứng
+      - Sữa bột
+      - Chất làm đặc
+      - Dextrose
+      - E322i
+      - Hạt tiêu
+      - Men
+      - Tỏi
+      - Bộ ổn định
+      - Xi-rô glucoza
+      - Dầu hạt cải
+      - Trái cây họ cam quýt
+      - Động vật
+      - Cà chua
+      - Bột ngô
+      - Hạt
+      - Nước hoa quả
+      - Bơ ca cao
+      - Bơ
+      - Điều chỉnh độ chua
+      - Dầu cọ
+      - Mỡ
+      - Lecithin đậu nành
+      - Ca cao dán
+      - Sữa bột tách kem
+      - Giấm
+      - Thịt
+      - Đại lý nâng cao
+      - E500
+      - Cơm
+      - E300
+      - Kem
+      - Tinh bột chữa cháy
+      - Lên men
+      - Mạch nha
+      - Thịt lợn
+      - Dầu colza
+      - Chanh vàng
+      - Hạt cây
+      - E415
+      - E250
+      - Muối biển
+      - Ngô
+      - E412
+      - Bột ca cao
+      - Đường lactose
+      - Cây họ đậu
+      - Thịt heo
+      - Đậu nành
+      - Cà rốt
+      - E471
+      - Dầu cọ
+      - Protein động vật
+      - Quả mọng
+      - mọng
+      - Protein sữa
+      - Quả táo
+      - táo
+      - Bột khoai tây
+      - Bơ
+      - Sô cô la
+      - Sữa bột nguyên kem
+      - Đường mía
+      - E450
+      - Phô mai
+      - Nuôi cấy vi sinh vật
+      - Dầu ô liu
+      - Fructose
+      - lúa mạch mạch nha
+      - Lên men lactic
+      - E440a
+      - Cá
+      - Váng sữa
+      - Enzyme
+      - E407
+      - Xi-rô glucoza-fructoza
+      - Maltodextrins
+      - Chất béo sữa
+      - Mùi tây
+      - Mù tạc
+      - Gluten
+      - Hương vani
+      - Bột cacao giảm béo
+      - E202
+      - Khoai tây
+      - Vitamin
+      - Đại lý bán
+      - Enzyme đông tụ
+      - Rượu
+      - bia
+      - Chất béo thực vật
+      - Bột gạo
+      - Nước chanh đậm đặc
+      - Sữa nguyên chất
+      - Sữa
+      - E500ii
+      - Protein thực vật
+      - Hương vani tự nhiên
+      - Rennet
+      - Quả cam
+      - cam
+      - Chiết xuất nấm men
+      - Chất béo bơ
+      - Tinh bột ngô biến đổi
+      - Hạnh nhân
+      - Khoáng chất
+      - E301
+      - Tăng hương vị
+      - Hạt phỉ
+      - Mật ong
+      - Dầu ô liu nguyên chất
+      - Yến mạch
+      - Xi rô đường
+      - Sữa không kem
+      - E410
+      - Ớt sừng
+      - Dầu ô liu đặc biệt nguyên chất
+      - Cọ mỡ
+      - Gia cầm
+      - Giống nho
+      - Tiêu đen
+      - Hạt mù tạt
+      - Vani
+      - Rau cần tây
+      - Đường nghịch chuyển
+      - Chất xơ
+      - Chất tạo ngọt
+      - Đậu nành
+      - E503
+      - Ớt chuông
+      - Lecithin hướng dương
+      - Lúa mì cứng
+      - E160a
+      - Nước chanh
+      - Xạ hương
+      - E621
+      - Gluten lúa mì
+      - Hướng dương
+      - Chiết xuất gia vị
+      - Xirô đường ngược
+      - Chất xơ thực vật
+      - E270
+      - Bột báng lúa mì cứng
+      - Húng quế
+      - Bột báng
+      - Dừa
+      - Thịt bò
+      - Cá có dầu
+      - Lòng đỏ trứng
+      - Tinh bột sắn
+      - Tinh bột mì
+      - Lúa mạch
+      - Sữa chua
+      - Lòng trắng trứng
+      - Muối i-ốt
+      - Bột mì
+      - Tinh bột gạo
+      - E160c
+      - Dâu rừng
+      - Mỡ động vật
+      - Đại lý kính
+      - Purée
+      - E422
+      - Ớt cựa gà
+      - Bột whey
+      - Đường chưa tinh chế
+      - Protein thực vật thủy phân
+      - Rượu
+      - E414
+      - Đường mía chưa tinh chế
+      - Bột
+      - Rau mùi
+      - E120
+      - Chiết xuất mạch nha lúa mạch
+      - Bột ngô
+      - Quế
+      - Dầu dừa
+      - E428
+      - E290
+      - E375
+      - Sữa bò
+      - Thịt bò
+      - Thịt heo
+      - bò
+      - heo
+      - E450i
+      - E420
+      - Nước xốt
+      - Protein đậu nành
+      - Vừng
+      - Giấm rượu
+      - Đậu phụng
+      - Cà chua cô đặc
+      - Lòng bàn tay
+      - E950
+      - Tinh dầu vanilla
+      - Yến mạch vảy
+      - Thiamin
+      - Lớp áo
+      - E466
+      - E316
+      - Vitamin D
+      - Nước cam
+      - E101
+      - Cà chua nghiền
+      - Xoài
+      - Cà chua xắt nhỏ
+      - Rau kinh giới
+      - Toàn bộ trứng
+      - Giấm thần
+      - Gà
+      - Quả dâu
+      - dâu
+      - Bột mì
+      - Nấm
+      - Thịt bò
+      - Bột tỏi
+      - Nghệ
+      - Nhục đậu khấu
+      - Dấm rượu vang
+      - E150a
+      - Kem tươi
+      - Folate
+      - Quả đào
+      - đào
+      - Sulfite
+      - Axít folic
+      - E296
+      - E150
+      - Sữa tiệt trùng
+      - E331
+      - Nước táo
+      - Nước khoáng
+      - Cây mê điệt
+      - Sắt
+      - Rượu trắng
+      - Sô cô la sữa
+      - E955
+      - E903
+      - Chất giữ ẩm
+      - Các loại thảo mộc và gia vị
+      - E1404
+      - Bột đậu nành
+      - Trứng tươi
+      - trứng
+      - Tiêu sọ
+      - tiêu
+      - Men làm bánh
+      - Vitamin B6
+      - hạt cải dầu
+      - E252
+      - E211
+      - Việt quất
+      - Khói
+      - Nước chanh cô đặc
+      - E100
+      - E160ai
+      - Quả dứa
+      - Hương chanh tự nhiên
+      - Gừng
+      - Đậu
+      - Thịt gà
+      - gà
+      - Thịt lợn muối xông khói
+      - Nước dùng
+      - E163
+      - Mỡ heo
+      - Hạt hướng dương
+      - E503ii
+      - Đường lactose và protein sữa
+      - Cà chua nghiền
+      - E282
+      - E392
+      - Động vật có vỏ
+      - Chất xử lý bột mì
+      - Quả dưa chuột
+      - dưa chuột
+      - E341
+      - Nước có ga
+      - nước ngọt
+      - Blackcurrant
+      - Ca cao giảm béo
+      - Hạt thì là
+      - Trà
+      - Sữa đặc
+      - Lê
+      - Củ hẹ
+      - Tỏi tây
+      - lúa mạch đen
+      - Dừa béo
+      - Sữa tách béo
+      - Bơ thực vật
+      - Bánh mì vụn
+      - Trái chuối
+      - Muối từ Guérande
+      - E306
+      - Nước khoáng thiên nhiên
+      - Chất chống đóng cứng
+      - Bột lúa mạch đen
+      - Đinh hương
+      - Bột sô cô la
+      - Natri
+      - Giăm bông
+      - E951
+      - Vitamin C
+      - Pectin trái cây
+      - lanh
+      - Cà phê
+      - Dầu và mỡ hạt cọ
+      - E224
+      - Vitamin B12
+      - Mạch nha lúa mì
+      - Bột cà chua
+      - E464
+      - Courgette
+      - Ớt chuông đỏ
+      - E262
+      - Lá nguyệt quế
+      - Chuẩn bị hương liệu
+      - Tinh bột sắn biến tính
+      - Bột ngô
+      - ngô
+      - bắp
+      - bột bắp
+      - Hương liệu tạo khói
+      - Nước ép cà chua
+      - Natri xitrat
+      - Rau chân vịt
+      - Cá trắng
+      - Sirô agave
+      - Đàn anh
+      - Vitamin E
+      - Đổ đầy
+      - Rễ củ cải đỏ
+      - E170
+      - váng sữa ngọt
+      - Vanillin
+      - Gạo lức
+      - Hẹ
+      - Axit pantothenic
+      - Champignon
+      - Hạt carob
+      - Nho khô
+      - Quả bí ngô
+      - Hạt điều
+      - Bột whey ngọt
+      - Nước ép trái cây cô đặc
+      - Men rennet chay
+      - Dầu hạt cọ
+      - Mù tạt Dijon
+      - Đường caramel
+      - Sữa tươi
+      - Cá hồi
+      - Nước táo cô đặc
+      - Rau thì là
+      - Quả ô liu
+      - Miếng sô cô la
+      - Hạt lanh
+      - Bơ hạt mỡ
+      - E160b
+      - E451
+      - E160
+      - cây rum
+      - Rau xà lách
+      - Men rennet vi sinh
+      - Xì dầu
+      - E200
+      - Lá kinh giới
+      - E476
+      - Bột chua
+      - E965
+      - E171
+      - Quả mơ
+      - Vỏ cam
+      - Cây bạc hà
+      - Xoài nhuyễn
+      - Vitamin A
+      - Lòng trắng trứng dạng bột
+      - Nhuyễn thể
+      - Hạt mè
+      - Sucrose
+      - E260
+      - Blackberry
+      - Thì là
+      - E170i
+      - Mâm xôi xay nhuyễn
+      - Gherkin
+      - E917
+      - Sữa tươi
+      - Bột lúa mạch
+      - E472e
+      - E509
+      - Cá ngừ
+      - E150d
+      - Chanh dây
+      - Bột hạt carob
+      - Thổ Nhĩ Kỳ
+      - Xi-rô
+      - Cám lúa mì
+      - Sữa tách béo có đặc
+      - Cá cơm
+      - Đường nho
+      - Giáp xác
+      - Hương cam tự nhiên
+      - E452
+      - E339
+      - Phải
+      - Sô cô la đen
+      - E501
+      - Gỗ sồi khói
+      - Các muối tạo nhũ
+      - Đậu lăng
+      - Sữa tươi nguyên kem
+      - Xơ táo
+      - E161b
+      - Vụn khoai tây
+      - Nước cam cô đặc
+      - Đậu xanh
+      - Đường nâu
+      - E338
+      - Chất độn
+      - Xi-rô đường bột mì
+      - Cam thảo
+      - Aubergine
+      - Cá trích
+      - Đậu cô ve
+      - Sữa bò tiệt trùng
+      - Cà chua cô đặc bổ đôi
+      - Biotin
+      - E631
+      - E401
+      - E901
+      - Cá trích Đại Tây Dương
+      - Dầu
+      - Con vịt
+      - Cholecalciferol
+      - Hạt bí
+      - Bột hạt phỉ
+      - Bột phô mai
+      - Thịt gà tây
+      - Mật đường
+      - E327
+      - Cá hồi Đại Tây Dương
+      - Mỡ gia cầm
+      - Bột mì mạch nha
+      - Sữa tách béo hoàn nguyên
+      - Alaska Pollock
+      - Nước ép quả mâm xôi
+      - Nước rau quả
+      - Ô-liu xanh
+      - Đạm whey
+      - Kẽm
+      - Trứng gà
+      - Vỏ bọc
+      - E334
+      - Phi lê cá trích
+      - Ớt đỏ
+      - E524
+      - Nước ép chanh
+      - Protein lúa mì
+      - Ớt cayenne
+      - Rượu vinegar trắng
+      - Spirulina
+      - E627
+      - Sợi mì
+      - Ức heo
+      - Protein đậu
+      - Đậu xanh
+      - Sản phẩm whey
+      - Đậu xanh
+      - Emmental
+      - E1105
+      - Dầu đậu nành
+      - Hương quả mâm xôi tự nhiên
+      - Nhũ hoa
+      - E461
+      - E223
+      - Mỳ ống
+      - E1103
+      - Sữa bò tươi
+      - E904
+      - Trà đen
+      - Hành tây khử nước
+      - E133
+      - Chiết xuất từ ​​thảo mộc
+      - Rennet dựa trên động vật
+      - Quả óc chó
+      - Đậu xanh Lăng
+      - Kem đánh bông
+      - Gia vị
+      - E304
+      - Bánh quy
+      - Lardon
+      - Bột lúa mạch đen nguyên cám
+      - Sữa chua nhẹ
+      - E511
+      - Ớt xanh
+      - Sữa bơ
+      - Bột nở
+      - Dầu hướng dương có hàm lượng oleic cao
+      - Ớt chuông xanh
+      - E333
+      - Chất thay thế chất béo từ sữa
+      - Nước nấu ăn
+      - Kem phủ lên bánh
+      - E102
+      - Xi-rô glucose khử nước
+      - Dâu tây xay nhuyễn
+      - Nước ép chanh dây
+      - Bánh ngô
+      - Nho cô đặc phải
+      - Cộng sả
+      - Quả cơm cháy
+      - Gan lơn
+      - Bột kiều mạch
+      - Cây Nam việt quất
+      - Xi rô caramen
+      - Lúa mì
+      - Caffeine
+      - Gelatin thịt lợn
+      - Quả anh đào
+      - anh đào
+      - Kẹo cao su
+      - Toàn bộ trứng bột
+      - Nước ép dứa
+      - E110
+      - Nước ép táo từ cô đặc
+      - E385
+      - Xi-rô ngô
+      - Bưởi
+      - E445
+      - Mỡ gà
+      - Xi rô gạo
+      - E460
+      - Bột báng lúa mì cứng chất lượng cao
+      - Collagen
+      - Chiết xuất vani tự nhiên
+      - Edam
+      - E153
+      - Nước cam cô đặc
+      - Herbes de Provence
+      - Inulin
+      - Bột yến mạch
+      - Nấu cơm
+      - E470b
+      - Thảo quả
+      - Bột khoai tây
+      - Vỏ bọc cừu
+      - Lactic và lên men lão hóa
+      - Sơ ri
+      - Nước ép
+      - Cà chua bỏ vỏ nghiền nát
+      - E420ii
+      - E500i
+      - Dừa bỏ vỏ
+      - E162
+      - Lysozyme từ trứng
+      - Hop chiết xuất
+      - E472c
+      - E1510
+      - Gan vịt
+      - E516
+      - Củ dền đỏ
+      - E141
+      - Đậu hũ
+      - E332
+      - Toàn bộ sữa chua
+      - E472b
+      - E220
+      - Dầu hướng dương tinh luyện
+      - E967
+      - Táo nghiền
+      - Cheddar
+      - Trái cây màu đỏ
+      - Phó mát bị chảy
+      - E262i
+      - Bánh mì
+      - Tóp mỡ
+      - Cyanocobalamin
+      - Tinh dầu
+      - Chất làm đông
+      - Nước ép nho
+      - Bột mạch nha lúa mì
+      - Lardoons hun khói
+      - Bạch hoa
+      - Cô đặc trái cây
+      - Pyridoxine hydrochloride
+      - Hương liệu tiêu tự nhiên
+      - E551
+      - Bột trứng
+      - E952
+      - Giâm Sherry
+      - Cá tuyết
+      - Ô liu đen
+      - Trứng miễn phí
+      - E131
+      - Mật ong từ Pháp
+      - Hạt dẻ
+      - Nước dứa cô đặc
+      - Vỏ vani
+      - Đánh vần
+      - Củng cô đại ly
+      - Bột ớt bột
+      - Parmesan
+      - Cà ri
+      - E475
+      - Cơm cháy
+      - Măng tây
+      - Sữa dê
+      - Hột cây hồi hương
+      - Phô mai con bò
+      - Bột mạch nha lúa mạch
+      - Cá thu
+      - Quark
+      - E965ii
+      - Chiết xuất mạch nha
+      - Quinoa
+      - Đường tinh
+      - Sữa nguyên kem tiệt trùng
+      - E320
+      - Giấm ăn
+      - Hoa Roselle
+      - Xi rô đường nâu
+      - Sữa khoáng
+      - Trái ổi
+      - Thức ăn tinh từ thực vật
+      - Nigari
+      - Grana Padano
+      - Thiamin mononitrat
+      - E1400
+      - E150b
+      - Fromage blanc
+      - Rượu mạnh
+      - E326
+      - Chiết xuất trái cây
+      - Lecithin hạt cải
+      - E1442
+      - Mầm lúa mì
+      - Cây caraway
+      - Hiền nhân
+      - Cải bắp
+      - Phụ phẩm từ thịt lợn
+      - E325
+      - Thịt bê
+      - Ngô dextrose
+      - Thịt gia cầm
+      - Sữa dừa
+      - Dầu chanh
+      - Bột chua lúa mạch đen
+      - Vani Bourbon
+      - Dextrose lúa mì
+      - Phi lê cá thu
+      - Thức ăn tinh từ trái cây và thực vật
+      - Da gia cầm
+      - Bột lúa mạch đen nguyên cám
+      - Parsnip
+      - Nước chanh hoàn nguyên
+      - Canxi
+      - Bắp ngọt
+      - E406
+      - Củ cải
+      - Cà chua bi
+      - E350
+      - Fleur de sel
+      - Quả me
+      - Mỡ bò
+      - Tập trung
+      - E635
+      - E481
+      - Nho đỏ
+      - Xi-rô fructose
+      - Bột cà chua
+      - Iốt
+      - Sữa tiệt trùng
+      - Màu sắc tự nhiên
+      - Bánh mì đặc biệt
+      - Giăm bông nấu chín thượng hạng
+      - Sữa ít béo
+      - Rau diếp
+      - Nước dâu
+      - Dầu hướng dương khử mùi
+      - Hạt tiêu đen nứt
+      - Bền bỉ
+      - Giấm rượu vang đỏ
+      - Thịt lợn thăn
+      - Nước lọc
+      - Tinh chất cô đặc
+      - Quả sung
+      - Cep
+      - Chiết xuất vani Bourbon
+      - Si rô đường mía
+      - Bún
+      - E575
+      - Ớt nóng
+      - Streptococcus thermophilus
+      - Ớt ngọt
+      - Sữa tiệt trùng tiệt trùng
+      - Rooibos
+      - Dầu hướng dương không hydro hóa
+      - Giống rau thơm
+      - E421
+      - Ricotta
+      - Nấm hương
+      - Mạch nha lúa mạch đen
+      - Psyllium
+      - Bột khoai tây
+      - Hạt Brazil
+      - Nước ép cà rốt cô đặc
+      - Gạo hạt dài
+      - Collagen thịt lợn
+      - Thịt bê
+      - Chiết xuất cam
+      - Ham nấu chín
+      - Protein thủy phân
+      - Kali iotua
+      - Ngày
+      - Sữa đặc
+      - Bột mì loại 0
+      - Thay thế bơ ca cao
+      - Hương liệu húng quế tự nhiên
+      - Hỗn hợp mật ong
+      - Hải cảng
+      - E530
+      - Trích xuất
+      - Chiết xuất trà
+      - Bifidus
+      - Giảm sắt
+      - Chất rắn ca cao
+      - Bạc hà
+      - Rượu mạnh Pomace
+      - Protein đậu thủy phân
+      - E251
+      - E501i
+      - Armagnac
+      - E350ii
+      - Bột đậu
+      - Thịt lợn phi lê
+      - E442
+      - Khoai tây nghiền
+      - Cám gạo
+      - Albacore
+      - Socola trắng
+      - Bột lòng đỏ trứng
+      - Đậu trắng
+      - Bột báng gạo
+      - rau diếp xoăn
+      - Bột chanh
+      - Đậu phộng rang
+      - Rượu mùi
+      - kiều mạch
+      - E332ii
+      - Mận
+      - Chiết xuất vani nguyên chất
+      - Sữa tách béo tiệt trùng
+      - Kem chua
+      - Xi-rô glucose-fructose lúa mì
+      - Nước khoáng thiên nhiên có ga
+      - Lưu manh
+      - E508
+      - Hạt nhân Ngô
+      - Nước ép lê
+      - Gan ngỗng vịt
+      - Mực ống
+      - Mayonaise
+      - Cá mòi
+      - Rượu vang đỏ
+      - Ớt chuông vàng
+      - Carr đen
+      - ớt
+      - Protein khoai tây
+      - E920
+      - Nước chanh leo hoàn nguyên
+      - Hạt lanh nâu
+      - Con tôm
+      - Hạnh nhân rang khô
+      - Caramen thơm
+      - Trà xanh
+      - E413
+      - Chiết xuất quả cơm cháy
+      - Chiết xuất cam thảo
+      - Thịt xông khói hun khói
+      - Xi rô củ cải đường
+      - Tỏi nhuyễn
+      - Men khử hoạt tính
+      - Xương
+      - Mật ong keo
+      - E460i
+      - Cơm gạo hạt dài
+      - Dầu tràn dầu
+      - Dầu ngô
+      - Chiết xuất thực vật
+      - E160aii
+      - Chokeberry
+      - Dầu thực vật hydro hóa
+      - Dưa gang
+      - Hạt cần tây
+      - E1100
+      - Vỏ chanh
+      - E473
+      - Bộ tăng cường
+      - Natri clorua
+      - Trứng luộc
+      - Kem đơn
+      - Vỏ bọc cừu tự nhiên
+      - Khoai lang
+      - bơ thực vật
+      - Muối biển chưa tinh chế
+      - E307a
+      - Yến mạch nguyên hạt
+      - Màu thực vật cô đặc
+      - E504
+      - Hương bạc hà tự nhiên
+      - Plantain
+      - Nước ép cà rốt
+      - Hương liệu bạc hà
+      - Hạt thông
+      - Bột đậu xanh
+      - Nhân cọ
+      - Sữa nguyên chất tiệt trùng tiệt trùng
+      - Tảo
+      - Hoa hồi
+      - Hành đỏ
+      - Thiamin hydroclorid
+      - Nho phải
+      - E340
+      - Đậu xanh
+      - Hạt dẻ và hạt phỉ xay
+      - Nước dâu cô đặc
+      - cúc la mã
+      - Cà phê hòa tan
+      - Chanh xanh
+      - Sữa bán tách béo thanh trùng
+      - Chất bảo quản trái cây
+      - Kẹo cao su Xanthan và kẹo cao su guar
+      - Maltose
+      - Hương liệu tỏi tự nhiên
+      - Gia vị hỗn hợp
+      - Khói lỏng
+      - Măng tây trắng
+      - Kem nhẹ
+      - Cây bách xù
+      - Cây thuốc phiện
+      - Pho mát dê
+      - Hương liệu vôi tự nhiên
+      - Tinh bột mì biến tính
+      - Bột báng lúa mì nguyên cám
+      - Vỏ vani xay nhuyễn
+      - Tinh dầu cam
+      - E339ii
+      - Đậu đỏ
+      - E504i
+      - Cây xuân đào
+      - Chromium
+      - Hương táo tự nhiên
+      - Calvados
+      - Mỡ cọ được hydro hóa hoàn toàn
+      - Clementine
+      - Phô mai bào
+      - Nhân hạt mơ
+      - Chuẩn bị trái cây
+      - Tinh dầu bạc hà
+      - E433
+      - Cô đặc khoáng sữa
+      - Muối biển chưa tinh chế từ Đại Tây Dương
+      - Gia vị
+      - Xi-rô ngô nhiều đường fructose
+      - Crème fraîche thanh trùng
+      - Ổi xay nhuyễn
+      - Táo khô
+      - Ngũ cốc nguyên hạt
+      - E451i
+      - Bột chiết xuất men
+      - Nước trái cây cô đặc
+      - Đường củ cải
+      - Kem socola
+      - Tập tin cá cơm
+      - Hương liệu oregano tự nhiên
+      - Cơ sở đậu nành
+      - Nước ép nho cô đặc
+      - Trứng gà thả rông
+      - Bơ mặn
+      - Ớt xay nhuyễn
+      - Nhân sô cô la
+      - Kem từ Normandy
+      - Hạnh nhân bột
+      - Đậu lăng đỏ
+      - Lòng trắng trứng lỏng
+      - Hành tây đã được khử nước
+      - E953
+      - E553b
+      - Bột quế
+      - Dứa phân đoạn
+      - Mỡ vịt
+      - Băp cải trăng
+      - Cái chùy
+      - Tinh bột gạo biến tính
+      - E472a
+      - Thịt lợn vai
+      - Cà chua cô đặc
+      - Cơm phồng
+      - Tỉa
+      - Kali
+      - Cánh hoa hồng
+      - Đậu xanh xay nhuyễn
+      - Bia
+      - Hành tây chiên trước
+      - Hương cam quýt tự nhiên
+      - Bột yến mạch nguyên cám
+      - Vỏ vani thơm
+      - Nước ép củ cải đường
+      - Giấm trái cây
+      - Xương heo
+      - Maltodextrin ngô
+      - Protein đậu nành đã khử nước
+      - E141ii
+      - Bột giấy
+      - Sữa chua bột tách kem
+      - Hương liệu cam quýt
+      - Chuẩn bị đậu nành
+      - E553
+      - Hành tây
+      - Quinin
+      - Chia
+      - E319
+      - Toàn bộ trứng tiệt trùng dạng lỏng
+      - E341ii
+      - Bột tương
+      - Hương nghệ tự nhiên
+      - Hạt cây thì là
+      - E536
+      - Chất xơ củ cải đường
+      - Mật ong từ cây keo từ Pháp
+      - Tinh bột đậu
+      - E261
+      - Sữa đặc có đường
+      - E262ii
+      - Hạt lúa mạch đen
+      - Cơm Thái Lan
+      - Bột kê
+      - Spirulina cô đặc
+      - Nước muối
+      - Bột mì tăng cường
+      - Đùi gà
+      - E172
+      - E321
+      - Hạt tiêu hồng
+      - Dầu hạt bông
+      - Gan gà
+      - Bột cần tây
+      - Tiêu
+      - Magiê
+      - Hỗn hợp mật ong của EU và ngoài EU
+      - Yến mạch không chứa gluten
+      - Rum
+      - E492
+      - Mallow
+      - Hương liệu bơ
+      - Làm bánh
+      - Bột báng lúa mì cứng bán nguyên hạt
+      - Cá ngừ vây vàng
+      - Nha đam
+      - Tôm
+      - Enzyme đông tụ vi sinh
+      - Dầu mù tạt
+      - Bánh wafer Neapolitan
+      - Gạo đồ hạt dài chất lượng cao
+      - E468
+      - E503i
+      - Giấm rượu táo
+      - Canh thịt bò
+      - Men bia
+      - Sữa trâu
+      - Quả bách xù
+      - Hạnh nhân xay
+      - Hành trắng thái nhỏ
+      - Nước chấm do bechamel sáng tạo Sauce
+      - Bột rau chân vịt
+      - Rượu sâm banh Marc de
+      - Gạo basmati
+      - Cá tuyết Đại Tây Dương
+      - Dưa hấu
+      - Mozzarella
+      - Nước ép cà rốt đen
+      - Sữa đậu nành
+      - Điphotphat sắt
+      - Da gà
+      - Rượu cognac
+      - Kẽm sulfat
+      - Nước ép nho đen từ cô đặc
+      - Hương liệu blackcurrant tự nhiên
+      - Nước củ dền đỏ
+      - E242
+      - Bột chua lúa mì
+      - Bơ không muối
+      - Cọ olein
+      - Couscous
+      - Nước bưởi
+      - E407a
+      - Hạt phỉ
+      - Mật ong rừng
+      - Chiết xuất hạt tiêu
+      - Nước luộc rau
+      - Đạm whey cô đặc
+      - Vải thiều
+      - nho Zante
+      - Đậu rộng
+      - Nước dứa cô đặc
+      - Bột sắn
+      - Giấm balsamic
+      - Giò heo
+      - Cải dầu
+      - E535
+      - Trái cây sấy
+      - Nấm sò
+      - Bông bắp
+      - Xi rô gạo lứt
+      - Cà phê xay
+      - Gelatin thịt bò
+      - Khoai tây nấu chín
+      - E640
+      - E1422
+      - Xúc xích Ý
+      - Nước ép củ cải đường cô đặc
+      - Nước ép quả mâm xôi cô đặc
+      - Trứng luộc kĩ
+      - E960
+      - Bột Lupin
+      - Dầu canola
+      - Nước sốt cà chua
+      - Cây kê
+      - Yến mạch nguyên hạt
+      - E235
+      - Sữa dê tiệt trùng
+      - Xơ keo
+      - Cá thu Đại Tây Dương
+      - Thịt vịt
+      - Xi-rô đảo mía
+      - Quả kiwi
+      - E336
+      - Kẽm gluconat
+      - Sốt cà chua
+      - Xơ hạt đậu
+      - Đu đủ
+      - Cây thảo linh lăng
+      - Nắp sữa
+      - Bột mì rất mịn
+      - mù tạt mạnh
+      - Ngũ cốc chứa gluten
+      - Sốt bê
+      - Lá cây
+      - Bột lúa miến
+      - Taurine
+      - Hạt cây anh túc
+      - Nấm rừng
+      - Hoa cúc la mã
+      - Táo đỏ
+      - Sữa cừu
+      - E1450
+      - Súp lơ trắng
+      - Cây tre
+      - Chất béo thực vật hydro hóa
+      - Hiếp dâm củ cải
+      - Bơ nấu chín
+      - Hỗn hợp tỏi
+      - E160e
+      - Lê xay nhuyễn
+      - Chất tạo bọt
+      - Hoa dâm bụt
+      - Hoa cơm cháy
+      - E954
+      - D-pantothenate canxi
+      - Bột hạt diêm mạch
+      - E122
+      - Chiết xuất hành tây
+      - Kvass wort cô đặc
+      - Phô mai xanh
+      - Kirsch
+      - Casein
+      - Muối biển i-ốt
+      - Gan
+      - Nước ép trái dâu tây
+      - Quả nam việt quất có đường
+      - E417
+      - Dấm táo
+      - Quan thoại
+      - Kẹo mềm hương hạnh
+      - Hành tây
+      - Dầu hạt cọ hydro hóa
+      - Hương chanh
+      - Bánh Crêpe
+      - Hạnh nhân miếng
+      - Thịt thỏ
+      - Ớt jalapeno
+      - Wakame
+      - Sữa lactose miễn phí
+      - Hương liệu tự nhiên vani Bourbon
+      - Gia vị tự nhiên
+      - Cơm đùn
+      - Sắt fumarate
+      - Vỏ bò
+      - E526
+      - Cải cầu vồng
+      - E263
+      - Cà rốt nấu chín
+      - Gạo trắng
+      - Nước dừa
+      - Hương liệu thì là tự nhiên
+      - E221
+      - Thịt gà nướng
+      - Protein gà
+      - Thịt chiên
+      - Ớt đỏ và vàng
+      - E345
+      - Tim bò
+      - Thịt bò nấu chín
+      - Hương chuối
+      - Sữa bò nguyên chất
+      - Trứng tươi nguyên quả
+      - Cá ngừ vằn
+      - E212
+      - Pholiota
+      - Ớt bột ngọt
+      - Hương liệu mâm xôi
+      - Phân lập protein đậu nành
+      - Gạo hạt dài Thái
+      - Cùi cam
+      - Aspic
+      - Đồng
+      - Kẹo vỏ cam
+      - Sò điệp Patagonian
+      - Sữa chua nhẹ bán tách kem
+      - Hương đào tự nhiên
+      - Hương liệu gia vị tự nhiên
+      - Chó bông hồng
+      - Nước ép quả cơm cháy
+      - Anh đào chua
+      - Atisô
+      - Mật ong rừng
+      - Cà phê arabica
+      - Sữa tách béo và kem tiệt trùng
+      - Hương chuối tự nhiên
+      - Mật ong Linden
+      - Cây tầm ma
+      - Bifidus actiregularis
+      - Giắc cắm trơn
+      - Đường mía nâu
+      - Hạt ca cao
+      - Chia hạt đậu
+      - Protein ngô thủy phân
+      - sò điệp
+      - Sữa bột bán gầy
+      - Xương bò
+      - Xi rô đường caramen
+      - Dầu hạt mỡ
+      - Chiết xuất gia vị tự nhiên
+      - Anh đào glacé
+      - E525
+      - Măng
+      - Miếng táo khô
+      - Bắp cải đỏ
+      - Cừu non
+      - E222
+      - Rong biển
+      - Điphotphat và natri cacbonat
+      - Bột sơ ri
+      - Thịt nguội hun khói
+      - Đậu gà nấu chín
+      - lá cần tây
+      - Vỏ chanh
+      - Sultanas
+      - E450ii
+      - E142
+      - Lòng đỏ trứng gà thả rông
+      - Phô mai mềm
+      - Ham liệu
+      - Sợi yến mạch
+      - Rau mồng tơi
+      - Sợi tre
+      - Protein gạo
+      - Chiết xuất nguyệt quế
+      - E435
+      - Xiềng xích
+      - Nho trắng không hạt
+      - Chiết xuất cà rốt
+      - Lòng đỏ trứng gà
+      - Hương caramel tự nhiên
+      - Hương táo
+      - Hương liệu hành tây tự nhiên
+      - Crom clorua
+      - Lòng trắng trứng đã được khử nước
+      - Tôm hùm gai Caribe
+      - Đường trắng
+      - Muối biển Celtic
+      - Bột lúa mạch đen nguyên cám
+      - Hỗn hợp protein
+      - Dầu thực vật đã được hydro hóa hoàn toàn
+      - Hương dâu tự nhiên
+      - Chromium nicotinate
+      - Lá bạc hà
+      - Kem sô cô la
+      - Hake
+      - E505
+      - Lòng đỏ trứng gà
+      - Trứng từ gà mái nhốt trong chuồng
+      - Boletus edulis
+      - Muối đóng rắn nitrit
+      - hake châu Âu
+      - Kefir nguyên hạt nhẹ
+      - E559
+      - Cô đặc cây rum
+      - Garam Masala
+      - Nat
+      - hương liệu cỏ xạ hương
+      - E225
+      - E941
+      - Củ cải đen
+      - Phô mai sữa cừu
+      - Hạnh nhân vỡ mảnh
+      - Xi-rô mạch nha
+      - Xi-rô mạch nha lúa mạch
+      - Dầu chiên
+      - E329
+      - Trái bả đậu
+      - Sốt mè
+      - Dầu chanh
+      - E959
+      - Hương liệu nhân tạo
+      - E519
+      - Ớt xanh
+      - Lòng đỏ trứng lỏng
+      - Protein đậu nành thủy phân
+      - Mực Humboldt
+      - Bột gạo lứt
+      - E172ii
+      - Hạt chia
+      - Mật ong hoa cam
+      - Hoa oải hương
+      - Bột lòng đỏ trứng gà
+      - Cơm dừa nạo sấy
+      - Đá
+      - Muối chữa bệnh
+      - Đường mịn
+      - Hương liệu thịt nướng
+      - E900
+      - Retinyl axetat
+      - Sữa bò bán tách béo thanh trùng
+      - Măng tây xanh
+      - Thịt cừư
+      - Sữa tươi tách béo có đường
+      - Nước ép quả cơm cháy cô đặc
+      - Hương liệu cola tự nhiên
+      - E337
+      - Hương dâu
+      - Kem
+      - Trình tự
+      - Đường demerara
+      - Hương liệu chanh
+      - Sorrel
+      - Đường lỏng
+      - kiều mạch hữu cơ
+      - Hạt diêm mạch trắng
+      - E418
+      - Protein đậu nành bù nước
+      - Hương liệu gà
+      - Dầu cám gạo
+      - Khoai tây chiên giòn
+      - Nước mắm
+      - Dầu hazelnut
+      - Nước ép nha đam
+      - Tôm hùm Nauy
+      - Xà lách băng
+      - Pleurotus ostreatus
+      - Chiết xuất chanh đậm đặc
+      - Mật mía
+      - E450vii
+      - Tía tô đất
+      - Giấm
+      - Lithothamnium calcareum
+      - Thuốc cá
+      - Eau de vie
+      - Bột kem chua
+      - Caramen bơ mặn
+      - E501ii
+      - Mật ong hoa nhãn
+      - Bánh bao Ý
+      - Bột whey lọc
+      - Ốp lết
+      - Ca cao chế biến với kiềm
+      - Linden
+      - E957
+      - Thỏ
+      - Nước ép sơ ri
+      - Lúa mạch ngọc trai
+      - Ngây thơ
+      - vụn dừa
+      - Bơ tươi
+      - Ớt Habanero
+      - Nước ép nho trắng
+      - Kẽm oxit
+      - Men rennet bê
+      - Tagliatelle
+      - Ngũ cốc nguyên hạt dạng mảnh
+      - Hạt kê
+      - Bột bánh dẻo
+      - Nước nấm cô đặc
+      - Mì ống nấu chín
+      - Ức gà
+      - E460ii
+      - Mứt lúa mạch
+      - Phân lân
+      - Comté
+      - Sốt phô mai
+      - Phô mai cứng
+      - Muối Địa Trung Hải
+      - Đậu nành
+      - Lá cam
+      - Hắc mai biển
+      - E518
+      - Khí đẩy
+      - Cà phê rang xay
+      - Con cừu
+      - E579
+      - E425
+      - E444
+      - Trái chôm chôm
+      - Hạt cây gai dầu
+      - Gà thả rông
+      - Nho xanh
+      - Salad bắp
+      - Anh đào ngọt ngào
+      - Gạo lứt Thaï
+      - Ca cao giảm béo
+      - Đậu nâu
+      - Hương liệu Ananas
+      - Bắp vàng
+      - Ca cao béo
+      - E129
+      - Tên lửa
+      - Hoa hồng hông
+      - Chất xơ hòa tan
+      - Thịt gà tây được tách cơ học
+      - Hạt vani
+      - Sữa bò gầy
+      - Chiết xuất rau sam
+      - Hạt hồ trăn
+      - Lúa mì nguyên cám
+      - Pasta nhồi
+      - Whey thẩm thấu
+      - Nước suối
+      - Mù tạt Dijon đậm đà
+      - Củ cần tây
+      - Toàn bộ chính tả
+      - Chiết xuất rượu trắng
+      - Bánh mì
+      - Gà thả rông truyền thống
+      - Wafer
+      - Ruy băng cây
+      - Cao lương
+      - Ốc sên
+      - Bột hạt dẻ
+      - Phô mai Emmental nóng chảy
+      - E341i
+      - Tương mè
+      - Phô mai đóng rắn
+      - Lá cỏ cà ri
+      - Sữa bò bán gầy
+      - lúa mạch đen nguyên cám
+      - Nước hoa hồng
+      - Tôm rồng
+      - E472d
+      - Kem vani
+      - Cỏ roi ngựa
+      - Rau trộn
+      - E151
+      - Bột vani
+      - Surimi
+      - Bánh gừng
+      - Müesli
+      - Mật ong từ Tây Ban Nha
+      - Bột gừng
+      - Morels
+      - Giá đỗ xanh
+      - E340i
+      - Cardamom Seed
+      - Bột bánh mì
+      - Chiết xuất tỏi
+      - Si rô bột sắn
+      - Meadowsweet
+      - Sốt Bologna
+      - Sơ lược
+      - Miếng táo
+      - Nước dùng gia cầm
+      - Ớt sừng
+      - Cheddar đặc biệt trưởng thành
+      - Mực vây ngắn Argentina
+      - Giống
+      - Glucose-fructose
+      - Retinyl palmitate
+      - đậu đen
+      - Gạo nếp
+      - Canxi pantothenate
+      - Vả khô
+      - Ức gà tây
+      - Nước ép nho trắng cô đặc
+      - Giao phối
+      - Toàn bộ kefir
+      - Rượu hoa hồng
+      - Chiết xuất thịt bò
+      - Cá hồi hồng
+      - E155
+      - Lasagne
+      - Muối tinh
+      - Selen
+      - Coppa
+      - Tôm hùm Mỹ
+      - E540
+      - E341iii
+      - Bột cacao tách kem
+      - Hương caramel
+      - Bifidobacterium lactis
+      - E1441
+      - Hạnh nhân đắng
+      - Chiết xuất trái cây họ cam quýt
+      - Gia vị hỗn hợp
+      - Ngựa
+      - Mận từ Agen
+      - Sữa chua ít chất béo
+      - Hương liệu ngải giấm tự nhiên
+      - E228
+      - Muối hun khói
+      - Phylloquinone
+      - Rau khô
+      - Tôm biển sâu
+      - DL-alpha tocopheryl axetat
+      - Cúc vạn thọ
+      - Rusk
+      - Phi lê cá minh thái Alaska
+      - Kvass wort
+      - Hương liệu hành
+      - Burnet
+      - Bột mạch nha
+      - Thai nhi
+      - Creme Fraiche
+      - Hương liệu cacao tự nhiên
+      - Xúc xích hun khói
+      - E336i
+      - Bột chanh
+      - Dầu cọ hydro hóa
+      - Nhân sâm
+      - Cua
+      - Hạt vani cạn kiệt
+      - Gelatine cá
+      - Bột sữa dừa
+      - Chim cun cút
+      - E900a
+      - Súp gà
+      - Cheddar trưởng thành
+      - Hương hoa cam
+      - Gan vịt nạc
+      - Lardoons nấu chín xông khói
+      - Chiết xuất táo
+      - E132
+      - Men tự nhiên
+      - Mề vịt
+      - Bột đậu phộng
+      - Hành tươi
+      - Thịt bò Angus
+      - Bơ hương liệu tự nhiên
+      - Đậu lăng xanh nấu chín
+      - Cơm tròn
+      - Chiết xuất hạt tiêu đen
+      - Chất béo thực vật không hydro hóa
+      - Gan gia cầm
+      - Cây lúa hoang
+      - Cà chua hữu cơ
+      - Protein trứng
+      - Vitamin K
+      - Nhân quả óc chó
+      - Bông cải xanh
+      - Hạnh nhân nguyên hạt
+      - Ergocalciferol
+      - E1201
+      - Bồ công anh
+      - Rễ cây rau diếp xoăn
+      - Hạt pecan
+      - Mangan
+      - E510
+      - Chất xơ có múi
+      - Thịt ngựa
+      - Mascarpone
+      - Đậu vani Bourbon
+      - Hạt dẻ nước
+      - Kẹo dẻo
+      - Nước chanh cô đặc
+      - Muối chưa tinh chế
+      - Chiết xuất trà đen
+      - Chất béo hydro hóa
+      - Garli hoang dã
+      - Syrah
+      - Bột nghệ
+      - Tên lửa hoang dã
+      - Gia vị và chiết xuất gia vị
+      - Cám
+      - Bụng heo
+      - Chiết xuất tảo
+      - Marc de Bourgogne
+      - Hương liệu phô mai
+      - E1101
+      - Kefir
+      - Hanh Tây chiên
+      - Crocant
+      - Bột hạnh nhân

@@ -1,0 +1,62 @@
+version: '3.1'
+
+rules:
+  - rule: User don't know about cook technique
+    steps:
+      - intent: ask_what_is_cook_technique
+      - action: action_what_is_cook_technique
+
+  - rule: set ingredient
+    steps:
+      - intent: set_ingredients
+      - action: action_set_ingredients
+
+  - rule: answer what is ingredient
+    steps:
+      - intent: ask_what_ingredients
+      - action: action_what_ingredients
+
+  - rule: get recipe for user
+    steps:
+      - intent: ask_find_recipe
+      - action: action_find_recipe
+
+  - rule: show detail recipe
+    steps:
+      - intent: ask_recipe_detail
+      - action: action_recipe_detail
+
+  - rule: show how to cook recipe
+    steps:
+      - intent: ask_how_to_cook
+      - action: action_how_to_cook
+
+  - rule: ingredient detail
+    steps:
+      - intent: ask_ingredient_details
+      - action: action_ingredient_details
+
+  - rule: previous recipe search
+    steps:
+      - intent: ask_previous_recipes
+      - action: action_previous_recipe
+
+  - rule: set diet setting
+    steps:
+      - intent: ask_for_diet
+      - action: action_set_diet
+
+  - rule: set cook method
+    steps:
+      - intent: provide_cook_technique
+      - action: action_set_cook_technique
+
+  - rule: clear search
+    steps:
+      - intent: ask_to_clear_search
+      - action: action_clear_config
+
+  - rule: re ingredient
+    steps:
+      - intent: re_set_ingredients
+      - action: action_re_set_ingredients

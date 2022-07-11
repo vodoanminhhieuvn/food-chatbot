@@ -1,0 +1,20 @@
+version: '3.1'
+
+nlu:
+  - synonym: fat
+    examples: |
+      - béo
+      - chất béo
+      - Fat
+      - fat
+
+  - synonym: calories
+    examples: |
+      - calo
+      - kalo
+      - kcal
+      - cal
+      - calory
+      - calories
+      - năng lượng
+      - nang luong

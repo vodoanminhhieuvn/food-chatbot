@@ -1,0 +1,21 @@
+version: '3.1'
+
+nlu:
+  - intent: ask_find_recipe
+    examples: |
+      - tìm món ăn
+      - xuất món ăn
+      - tạo món ăn
+      - tìm kiếm
+      - tìm
+      - tìm đồ ăn
+      - tìm món ăn như thế nào
+      - xuất món ăn
+      - giới thiêu món ăn
+      - tìm đi
+      - món hồi nãy
+      - lịch sử tìm
+      - tìm lại lịch sử
+      - các món hổi mới tìm
+      - có món gì ngon với [gà](ingredient) không nhỉ
+      - có món gì ngon với trứng [chiên](cook_technique)

@@ -1,0 +1,22 @@
+version: '3.1'
+
+nlu:
+  - intent: ask_for_nutrient
+    examples: |
+      - [calo](nutrient) [123](min_number)
+      - [năng lượng](nutrient) [234](min_number) - [456](max_number)
+      - [năng lượng](nutrient)  - [456](max_number)
+      - [béo](nutrient) - [324](max_number)
+      - [chất béo](nutrient) [324](min_number) - [2341](max_number)
+      - [calo](nutrient) [320](min_number) - [520](max_number) and [fat](nutrient) [23](min_number) - [345](max_number)
+      - [fat](nutrient) -[555](max_number) and [calo](nutrient) [23](min_number)
+      - [fatty](nutrient) - [555](max_number) and [calo](nutrient) [23](min_number)
+      - [fatty](nutrient) [320](min_number) - [520](max_number)
+      - [calory](nutrient) [320](min_number) - [520](max_number)
+      - [calory](nutrient) [23](min_number) - [24](max_number)
+      - [calory](nutrient) [23](min_number) - [12](max_number)
+      - [calory](nutrient) [50](min_number) - [35](max_number)
+      - [calory](nutrient) [5](min_number) - [7](max_number)
+      - [calory](nutrient) [10](min_number) - [7](max_number)
+      - [calories](nutrient) [10](min_number) - [7](max_number)
+      - [calories](nutrient) [10](min_number)

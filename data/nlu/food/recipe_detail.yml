@@ -1,0 +1,12 @@
+version: '3.1'
+
+nlu:
+  - intent: ask_recipe_detail
+    examples: |
+      - chi tiết món [0](detail_index)
+      - mình muốn nấu [1](detail_index)
+      - cho thêm thông tin [2](detail_index)
+      - mình thấy thích món [3](detail_index)
+      - xem món [4](detail_index)
+      - cách nấu món [5](detail_index)
+      - chi tiết món [2](detail_index)

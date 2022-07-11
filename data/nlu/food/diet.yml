@@ -1,0 +1,11 @@
+version: '3.1'
+
+nlu:
+  - intent: ask_for_diet
+    examples: |
+      - [ăn chay](diet)
+      - mình là người [ăn chay](diet)
+      - mình đang [giảm cân](diet)
+      - mình muốn đồ ăn [tăng cân](diet)
+      - tìm dồ [ăn chay](diet)
+      - [ăn kiêng](diet)

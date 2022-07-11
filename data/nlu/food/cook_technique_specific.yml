@@ -1,0 +1,10 @@
+version: '3.1'
+
+nlu:
+  - intent: ask_what_is_cook_technique
+    examples: |
+      - [chiên](cook_technique) là gì
+      - hấp là gì
+      - làm sao để chiên ?
+      - phương thức chiên là gì
+      - cách nấu kiểu chiên là sao ?
