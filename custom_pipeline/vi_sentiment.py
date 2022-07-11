@@ -6,13 +6,10 @@ from rasa.engine.storage.resource import Resource
 from rasa.engine.storage.storage import ModelStorage
 from rasa.shared.nlu.training_data.message import Message
 from rasa.shared.nlu.training_data.training_data import TrainingData
-from spellchecker import SpellChecker
 from rasa.nlu.tokenizers.tokenizer import Token, Tokenizer
 from rasa.shared.nlu.constants import ENTITIES, TEXT
 
 from underthesea import sentiment
-
-spell = SpellChecker()
 
 # TODO: Correctly register your component with its type
 
