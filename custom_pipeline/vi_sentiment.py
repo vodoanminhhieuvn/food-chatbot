@@ -1,4 +1,3 @@
-from email import message
 from typing import Any, Dict, List, Optional, Text
 from rasa.engine.graph import GraphComponent, ExecutionContext
 from rasa.engine.recipes.default_recipe import DefaultV1Recipe
