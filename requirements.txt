@@ -33,7 +33,7 @@ cffi==1.15.0
 chardet==3.0.4
 charset-normalizer==2.0.12
 clang==5.0
-click==8.1.3
+click==8.0
 cloudpickle==1.6.0
 colorclass==2.2.2
 coloredlogs==15.0.1
@@ -206,7 +206,6 @@ spacy-loggers==1.0.1
 SQLAlchemy==1.4.32
 srsly==2.4.2
 stack-data==0.2.0
-streamlit==1.3.1
 tabulate==0.8.9
 tarsafe==0.0.3
 tensorboard==2.8.0
@@ -259,3 +258,4 @@ xmltodict==0.12.0
 yarl==1.7.2
 yasha==5.0
 zipp==3.7.0
+jellyfish==0.9.0
